@@ -33,14 +33,16 @@ class MyApp extends StatelessWidget {
               right: 0.0,
               bottom: 0.0,
               child: Container(
-                padding: const EdgeInsets.all(16.0),
-                color: Colors.grey[300],
+                padding: const EdgeInsets.symmetric(vertical: 6),
+                color: kColorScheme.onInverseSurface,
+                // color: Colors.grey[300],
                 alignment: Alignment.center,
                 child: const Text(
                   'Made in Bharat by Kedar Chandrayan',
                   style: TextStyle(
-                    fontSize: 12.0,
-                    color: Colors.black87,
+                    fontSize: 14.0,
+                    // color: kColorScheme.primaryContainer
+                    // color: Colors.black87,
                   ),
                 ),
               ),

@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
                 : 'Welcome!',
             style: const TextStyle(fontSize: 60, fontWeight: FontWeight.bold),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
           // Number board
           GridView.builder(
             shrinkWrap: true,
@@ -164,7 +164,7 @@ class _HomePageState extends State<HomePage> {
               );
             },
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
           // Button to get the next number
           ElevatedButton(
             onPressed: currentNumber >= 0 ? _nextNumber : null,
@@ -172,7 +172,7 @@ class _HomePageState extends State<HomePage> {
                 ? const Text('Next Number')
                 : const Text('Start Game'),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
           // Button to restart the game
           ElevatedButton(
             onPressed: _gameStarted ? _showRestartConfirmationDialog : null,
